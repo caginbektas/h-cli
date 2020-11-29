@@ -7,17 +7,17 @@
 - touch src/cli.js
 - touch bin/h-cli
 
-- update h-cli with following
-`
+- update h-cli with following:
+```
 #!/usr/bin/env node
 
 require = require('esm')(module /*, options */);
 require('../src/cli').cli(process.argv)
-`
+```
 
 - npm install esm
 
-- update highlighted areas in package.json
+- update package.json similiar to following: 
 ```
 {
   "name": "@caginbektas/h-cli",
