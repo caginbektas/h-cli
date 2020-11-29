@@ -7,6 +7,13 @@
 - touch src/cli.js
 - touch bin/h-cli
 
+- update cli.js with following:
+```
+export function cli(args){
+    console.log(args);
+}
+```
+
 - update h-cli with following:
 ```
 #!/usr/bin/env node
@@ -44,4 +51,16 @@ require('../src/cli').cli(process.argv)
     "esm": "^3.2.25"
   }
 }
+```
+
+- npm link
+
+then finally our first CLI try:
+- h-cli --test should give you an output like, 
+```
+[
+  '/usr/local/Cellar/node/15.2.1/bin/node',
+  '/usr/local/bin/h-cli',
+  '--test'
+]
 ```
