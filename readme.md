@@ -64,3 +64,5 @@ then finally our first CLI try:
   '--test'
 ]
 ```
+
+- npm i inquirer arg

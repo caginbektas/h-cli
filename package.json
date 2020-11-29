@@ -4,8 +4,7 @@
   "description": "My first CLI to learn it",
   "main": "src/index.js",
   "bin": {
-      "@caginbektas/h-cli": "bin/h-cli",
-      "h-cli": "bin/h-cli"
+    "h-cli": "bin/h-cli"
   },
   "publishConfig": {
     "access": "public"
@@ -20,6 +19,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "esm": "^3.2.25"
+    "arg": "^5.0.0",
+    "esm": "^3.2.25",
+    "inquirer": "^7.3.3"
   }
 }
