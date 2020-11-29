@@ -18,14 +18,14 @@ require('../src/cli').cli(process.argv)
 - npm install esm
 
 - update highlighted areas in package.json
-`
+```
 {
-  **"name": "@caginbektas/h-cli",**
+  "name": "@caginbektas/h-cli",
   "version": "1.0.0",
-  **"description": "My first CLI to learn it",**
-  **"main": "src/index.js",**
-  **"bin": {**
-  **"@caginbektas/h-cli": "bin/h-cli",**
+  "description": "My first CLI to learn it",
+  "main": "src/index.js",
+  "bin": {
+      "@caginbektas/h-cli": "bin/h-cli",
       "h-cli": "bin/h-cli"
   },
   "publishConfig": {
@@ -44,5 +44,4 @@ require('../src/cli').cli(process.argv)
     "esm": "^3.2.25"
   }
 }
-
-`
+```
